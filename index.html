@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Cyber Attack Dashboard</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<h1>🛡 Cyber Security Dashboard</h1>
+
+<!-- SQL Injection Section -->
+<div class="card">
+    <h2>SQL Injection Detector</h2>
+    <input type="text" id="sqlInput" placeholder="Enter SQL Query">
+    <button onclick="checkSQL()">Check</button>
+    <p id="sqlResult"></p>
+</div>
+
+<!-- DDoS Section -->
+<div class="card">
+    <h2>DDoS Prediction</h2>
+    <button onclick="simulateDDoS()">Start Monitoring</button>
+
+    <canvas id="ddosChart"></canvas>
+</div>
+
+<!-- Language Switch -->
+<button onclick="changeLang()">🌐 Change Language</button>
+
+<script src="/static/app.js"></script>
+</body>
+</html>
